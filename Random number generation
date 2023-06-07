@@ -1,0 +1,16 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int min= sc.nextInt();
+        int max=sc.nextInt();
+        double num1=Math.random()*(max-min+1)+min;
+        double num2=Math.random()*(max-min+1)+min;
+        int num3=(int)(Math.random()*(max-min+1)+min);
+        int num4=(int)(Math.random()*(max-min+1)+min);
+        System.out.println("Random number in double "+num1);
+        System.out.println("Random number in double "+num2);
+        System.out.println("Random number in int "+num3);
+        System.out.println("Random number in int "+num4);
+        
+}}
