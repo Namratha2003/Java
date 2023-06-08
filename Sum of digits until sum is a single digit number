@@ -1,0 +1,32 @@
+/*To print sum of the given digits until the sum tends to be a single digit number,
+eg: if the given number is 123456 the sum of digits = 1+2+3+4+5+6=21 
+which is not a single digit number, therefore we need to calculate the sum of digits of 21 i.e 1+2=3, 3 is a single digit number. 
+Hence we stop and print it*/
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int n1=n;
+        if(n<0)
+        {
+            n=n*(-1);
+        }
+        int sum=1,rem=0;
+        do{
+            sum=0;
+        while(n>0){
+            rem = n%10;
+            sum= sum+rem;
+            n=n/10;}
+        if(sum>9)
+        n=sum;
+        }while(n>9);
+        if(n1<0)
+        System.out.println("-"+sum);
+        else
+        System.out.println(sum);
+	}
+}
